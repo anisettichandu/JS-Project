@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="https://prod-assets.futureme.org/assets/logo/logo-reverse@1x-056e77a61325f5f09d494ef19e0f2aab3ab1a50253c361e57169e3bd923053ed.svg"></div>
+
+        <ul class="menu">
+            <li><a href="./project.html">✏️ Write a Letter to the Future</a></li>
+            <li><a href="./public.html">Read Public Letters</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./press.html">Press & Props</a></li>
+        </ul>
+
+        <div class="buttons">
+            <button class="btn-outline" onclick="goToSignup()">Sign In></button>
+            <button class="btn-filled" onclick="goToSignup()">Sign Up</button>
+
+        </div>
+    </nav>
+<div class="top-title">
+    <h2 id="letter-date"></h2>
+</div>
+
+<div class="page-container">
+    <h1 id="date-title">A letter from </h1>
+
+    <div class="main-container">
+
+        <!-- LEFT LETTER BOX -->
+        <div class="editor-box">
+            <textarea class="letter-box">Dear FutureMe, hello</textarea>
+
+            <div class="premium-bar">
+                Upgrade to <span class="blue-text">Premium</span> to include images, videos, and files.
+                <span id="word-count">3 word(s)</span>
+            </div>
+        </div>
+
+        <!-- RIGHT SETTINGS BOX -->
+        <div class="right-box">
+
+            <!-- Deliver Row -->
+            <div class="deliver-row">
+                <span class="deliver-title">Deliver in</span>
+                <span class="toggle-text">
+                    Or choose a <span id="toggle-mode" class="link-text">date</span>
+                </span>
+            </div>
+
+            <!-- Duration Buttons -->
+            <div class="btn-group" id="duration-group">
+                <button class="option-btn active">6 months</button>
+                <button class="option-btn">1 year</button>
+                <button class="option-btn">3 years</button>
+                <button class="option-btn">5 years</button>
+                <button class="option-btn">10 years</button>
+            </div>
+
+            <!-- Date Select -->
+            <div id="date-group" class="date-group hidden">
+                <select id="month-select"></select>
+                <select id="day-select"></select>
+                <select id="year-select"></select>
+            </div>
+
+            <!-- Audience -->
+            <label class="mt">Select your audience</label>
+            <div class="btn-group">
+                <button class="option-btn active" id="private-btn">Private</button>
+                <button class="option-btn" id="public-btn">Public, but anonymous</button>
+            </div>
+
+            <!-- Email -->
+            <label class="mt">Make sure you get your letter</label>
+            <div class="email-box">
+                <span>✉️</span>
+                <input type="email" placeholder="Please enter an email">
+            </div>
+
+            <p class="note">
+                You will receive a confirmation email - please make sure your email address is correct!
+                By writing a letter and signing up for FutureMe you agree to the Terms of use
+            </p>
+
+            <!-- Submit -->
+            <button class="send-btn">Send to the Future</button>
+
+        </div>
+
+    </div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="fm-footer">
+
+    <!-- FutureMe Logo -->
+    <div class="fm-logo">
+        future<span>me</span>
+    </div>
+
+    <!-- FIRST ROW OF LINKS -->
+    <div class="fm-top-links">
+        <a href="#"><i class="fa-solid fa-pen"></i> Write a letter</a>
+        <a href="./public.html"><i class="fa-solid fa-envelope-open-text"></i> Read Public Letters</a>
+        <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+        <a href="#"><i class="fa-solid fa-user"></i> Sign Up</a>
+        <a href="#"><i class="fa-solid fa-paper-plane"></i> Invite a friend</a>
+    </div>
+
+    <!-- SECOND ROW -->
+    <div class="fm-nav">
+        <a href="#">Home</a>
+        <a href="#">Press & Props</a>
+        <a href="#">Jobs</a>
+        <a href="#">Advertise</a>
+        <a href="#">Support</a>
+        <a href="#">Blog</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="fm-social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <!-- APP BADGES -->
+    <div class="fm-apps">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+    </div>
+
+</div>
+
+
+
+
+<script src="letter.js"></script>
+</body>
+</html>

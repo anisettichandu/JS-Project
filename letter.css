@@ -1,0 +1,290 @@
+.navbar {
+    background-color: #1639CE;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #D9E5FF;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-filled {
+    padding: 10px 25px;
+    background: white;
+    border: none;
+    color: #1639CE;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Page Layout */
+.page-container {
+    padding: 15px 40px;
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+#date-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Two-Column Layout */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LEFT SIDE */
+.editor-box {
+    width: 60%;
+}
+
+.letter-box {
+    width: 100%;
+    height: 260px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    resize: none;
+}
+
+.premium-bar {
+    margin-top: 8px;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.blue-text {
+    color: #0066ff;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.right-box {
+    width: 32%;
+    margin-left: 20px;
+}
+
+.deliver-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.deliver-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.toggle-text {
+    font-size: 13px;
+    color: gray;
+}
+
+.link-text {
+    color: #0066ff;
+    cursor: pointer;
+}
+
+/* Buttons */
+.btn-group {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+    margin-right: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.option-btn.active {
+    background: #4a8cff;
+    color: white;
+    border-color: #4a8cff;
+}
+
+/* Date Select */
+.date-group select {
+    padding: 6px;
+    font-size: 13px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-right: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Email Box */
+.email-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.email-box input {
+    border: none;
+    margin-left: 8px;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Footer Notes */
+.note {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #444;
+}
+
+/* Button */
+.send-btn {
+    width: 100%;
+    background: linear-gradient(to right, #c26b59, #d99a4c);
+    padding: 14px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.mt {
+    margin-top: 10px;
+    display: block;
+}
+
+.fm-footer {
+    margin-top: 40px;
+    padding-left: 60px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* LOGO */
+.fm-logo {
+    font-size: 42px;
+    font-weight: 700;
+    color: #202325;
+}
+.fm-logo span {
+    color: #1e64ff;
+}
+
+/* FIRST ROW (WITH ICONS) */
+.fm-top-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 35px;
+}
+.fm-top-links a {
+    font-size: 22px;
+    color: #1e64ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.fm-top-links i {
+    margin-right: 8px;
+    color: #1e64ff;
+}
+
+/* SECOND ROW NAVIGATION */
+.fm-nav {
+    margin-top: 25px;
+    display: flex;
+    gap: 28px;
+}
+.fm-nav a {
+    font-size: 22px;
+    color: #555;
+    text-decoration: none;
+}
+.fm-nav a:hover {
+    color: #000;
+}
+
+/* SOCIAL ICONS */
+.fm-social {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+}
+.fm-social i {
+    font-size: 32px;
+    color: #555;
+}
+.fm-social i:hover {
+    color: #000;
+}
+
+/* APP BADGES */
+.fm-apps {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+.fm-apps img {
+    width: 180px;
+}
+
+

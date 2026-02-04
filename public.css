@@ -1,0 +1,340 @@
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+    background-color: #1639CE;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #D9E5FF;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-filled {
+    padding: 10px 25px;
+    background: white;
+    border: none;
+    color: #1639CE;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* -------------------- FEATURED PAGE -------------------- */
+
+.featured-wrapper {
+    max-width: 1150px;
+    margin-left: 30px ;
+    padding: 10px 25px;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* PAGE TITLE */
+.page-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #e11d48; /* red */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-title .light-text {
+    color: #1d4ed8;
+    font-weight: 700;
+}
+
+.page-title .icon {
+    font-size: 36px;
+}
+
+/* Toggle Menu (Featured | Epilogues) */
+.toggle-menu {
+    display: flex;
+    gap: 35px;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.toggle-menu span {
+    cursor: pointer;
+    color: #808080;
+    transition: 0.2s;
+}
+
+.toggle-menu span:hover {
+    color: black;
+}
+
+.toggle-menu .active {
+    font-weight: 700;
+    color: black;
+}
+
+/* -------------------- LETTER CARD -------------------- */
+
+.letter-card {
+    padding: 30px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px; /* space between boxes */
+    transition: background 0.2s;
+    max-width: 950px;
+}
+
+.letter-card:hover {
+    background: #f9fafb; /* hover effect */
+}
+
+/* Meta line (Time Travelled) */
+.meta-line {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+
+/* Title */
+.letter-title {
+    font-size: 24px;   /* exact match */
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+
+/* Main Text */
+.letter-text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.45;
+    max-width: 950px;  /* wider like original UI */
+    margin-bottom: 15px;
+}
+
+
+
+/* Bottom row (left: likes/comments, right: date info) */
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+
+/* LEFT SIDE */
+.social-row {
+    font-size: 15px;
+    color: #444;
+    display: flex;
+    gap: 20px;
+}
+
+.count {
+    margin-left: 4px;
+    font-weight: 600;
+}
+
+
+
+/* RIGHT SIDE */
+.date-row {
+    font-size: 15px;
+    color: #666;
+    white-space: nowrap;
+}
+
+.dots {
+    margin-left: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+/* Pagination Wrapper */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    max-width: 1100px;
+    padding-left: 30px;
+}
+
+/* Previous / Next Buttons */
+.page-btn {
+    background: #f1f5f9;
+    border: none;
+    padding: 12px 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+/* Right button should be blue text like original site */
+.page-btn.right {
+    color: #0b63ff;
+    background: white;
+}
+
+/* Keyboard shortcuts text */
+.keyboard-info {
+    font-size: 18px;
+    color: #6b7280;
+}
+.footer {
+    background: #1639CE;
+    color: white;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TOP MEDIA STRIP */
+.media-strip {
+    background: #0C1D5E;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 25px 0;
+}
+
+.media-strip img {
+    height: 45px;
+    opacity: 0.9;
+}
+
+/* MAIN FOOTER */
+.footer-main {
+    padding: 50px 50px;
+}
+
+/* .footer-logo {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family:
+    margin-bottom: 20px;
+} */
+
+.footer-logo strong {
+    color: #D9E5FF;
+}
+
+/* MAIN LINKS */
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.footer-links {
+    margin-bottom: 30px;
+}
+
+/* MENU */
+.footer-menu {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+    font-size: 28px;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+/* STORE BUTTONS */
+.footer-apps img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.footer-apps {
+    margin-bottom: 30px;
+}
+
+/* BOTTOM LINKS */
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.social-icons {
+    display: flex;
+    gap: 25px; /* space between icons */
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 28px;
+    color: white;        /* WHITE COLOR for icons */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: #d6e2ff;      /* light blue hover color */
+    transform: scale(1.2);
+}
+
+
+

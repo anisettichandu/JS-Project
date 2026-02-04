@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create a FutureMe Account</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+          <div class="signup-header">
+  <div class="footer-logo">
+    <img
+      src="https://prod-assets.futureme.org/assets/logo/logo-reverse@1x-056e77a61325f5f09d494ef19e0f2aab3ab1a50253c361e57169e3bd923053ed.svg"
+      alt="FutureMe"
+    >
+  </div>
+</div><br>
+  <div class="signup-page">
+    <div class="signup-card">
+
+      <h1>Create a FutureMe Account</h1>
+
+      <!-- Google Signup (DEMO) -->
+      <a
+        href="https://accounts.google.com"
+        target="_blank"
+        class="google-btn"
+      >
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+        Sign up with Google
+      </a>
+
+      <!-- Divider -->
+      <div class="divider">
+        <span>or use your email address</span>
+      </div>
+
+      <!-- Email -->
+      <label>Email address</label>
+      <div class="input-box">
+        <span class="icon">✉</span>
+        <input type="email" placeholder="Enter your email">
+      </div>
+      <p class="hint">You will receive a confirmation email</p>
+
+      <!-- Password -->
+      <label>Password</label>
+      <div class="input-box">
+        <span class="icon">🔒</span>
+        <input type="password" placeholder="Create a password">
+      </div>
+
+      <!-- Checkbox -->
+      <div class="checkbox">
+        <input type="checkbox" checked>
+        <span>Keep me signed in on this device until I sign out</span>
+      </div>
+
+      <!-- Button -->
+      <button class="create-btn" onclick="demoSignup()">
+        CREATE ACCOUNT
+      </button>
+
+      <!-- Footer text -->
+      <p class="terms">
+        By signing up for FutureMe you agree to the
+        <a href="#">terms of use</a>
+      </p>
+
+      <p class="signin">
+        Already have an account?
+        <a href="#">Sign In</a>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Demo JS -->
+  <script>
+    function demoSignup() {
+      alert("Demo only 🚀\nAccount creation will be handled by backend.");
+    }
+  </script>
+
+</body>
+</html>

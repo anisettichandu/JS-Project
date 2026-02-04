@@ -1,0 +1,374 @@
+.navbar {
+    background-color: #1639CE;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #D9E5FF;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-filled {
+    padding: 10px 25px;
+    background: white;
+    border: none;
+    color: #1639CE;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.blog-header {
+    text-align: center;
+    padding: 150px 20px 120px;
+    position: relative;
+    overflow: hidden;
+    height: 480px;
+}
+
+/* TITLE */
+.blog-title {
+    font-size: 70px;
+    font-weight: 700;
+    color: #1c1c1c;
+}
+
+/* SUBTITLE */
+.blog-subtitle {
+    font-size: 26px;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.social-icons a {
+    width: 55px;
+    height: 55px;
+    background: white;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #1c1c1c;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #e8f0ff;
+    transform: scale(1.15);
+}
+
+/* FLOATING ICON CONTAINER */
+.icons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* SYMBOL STYLING */
+.icon {
+    position: absolute;
+    font-size: 32px;    /* smaller */
+    opacity: 0.85;
+    font-weight: 500;
+    animation: rotate 3s linear infinite; /* faster */
+}
+
+/* RANDOM POSITIONS */
+.i1 { left: 18%; top: 8%;  color: #27ae60; }
+.i2 { left: 88%; top: 12%; color: #e74c3c; }
+.i3 { left: 60%; top: 5%;  color: #1d4ed8; }
+.i4 { left: 12%; top: 60%; color: #9b59b6; }
+.i5 { left: 75%; top: 78%; color: #2ecc71; }
+.i6 { left: 45%; top: 20%; color: #f1c40f; }
+.i7 { left: 7%;  top: 48%; color: #2980b9; }
+.i8 { left: 94%; top: 58%; color: #e84393; }
+.i9 { left: 50%; top: 88%; color: #16a085; }
+.i10 { left: 32%; top: 38%; color: #e67e22; }
+/* NEW ICON POSITIONS */
+.i11 { left: 8%;  top: 25%; color: #ff6b6b; }
+.i12 { left: 92%; top: 28%; color: #4cd137; }
+.i13 { left: 30%; top: 12%; color: #e1b12c; }
+.i14 { left: 72%; top: 65%; color: #0097e6; }
+.i15 { left: 40%; top: 75%; color: #9c88ff; }
+.i16 { left: 15%; top: 85%; color: #e84118; }
+.i17 { left: 58%; top: 92%; color: #00a8ff; }
+.i18 { left: 82%; top: 42%; color: #fbc531; }
+.i19 { left: 52%; top: 32%; color: #8c7ae6; }
+.i20 { left: 3%;  top: 40%; color: #44bd32; }
+
+
+/* ROTATION ANIMATION */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* FILTER BAR ABOVE CARDS */
+.filter-bar {
+    display: flex;
+    color: #00a8ff;
+    gap: 30px;
+    padding: 10px 20px;
+    margin-left: 30px ;
+    max-width: 1300px;
+    font-size: 22px;
+}
+
+.filter-bar a {
+    text-decoration: none;
+    color: #00a8ff;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.filter-bar a:hover {
+    color: #1d4ed8;
+    text-decoration: dashed;
+}
+
+.filter-bar .active {
+    color: #1d4ed8;
+    font-weight: 700;
+}
+
+/* ---------------------------------------
+   BLOG CARDS — FULL CSS
+--------------------------------------- */
+
+/* GRID LAYOUT FOR ALL CARDS */
+.blog-cards {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 35px;   /* row gap & column gap */
+    padding: 0 20px;
+}
+
+/* INDIVIDUAL CARD */
+.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* IMAGE WRAPPER */
+.img-box {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+/* CARD IMAGE */
+.img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.img-box img:hover {
+    transform: translateY(-10px);
+}
+
+/* CATEGORY TEXT */
+.category {
+    margin-top: 15px;
+    color: #2557e0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* TITLE TEXT */
+.title {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #111;
+}
+
+/* ---------------------------------------
+   RESPONSIVE (TABLET)
+--------------------------------------- */
+@media (max-width: 992px) {
+    .blog-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 25px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .category {
+        font-size: 17px;
+    }
+}
+
+/* ---------------------------------------
+   RESPONSIVE (MOBILE)
+--------------------------------------- */
+@media (max-width: 600px) {
+    .blog-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .category {
+        font-size: 16px;
+    }
+}
+
+/* ------------------------------
+   FUTUREME FOOTER — FINAL CSS
+--------------------------------*/
+/* FOOTER MAIN WRAPPER */
+.footer {
+    background: #F8F9FC;     /* Light grey-white background */
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6B6F76;
+}
+
+/* FUTUREME LOGO */
+.logo {
+    margin-bottom: 25px;
+}
+
+/* TOP NAVIGATION LINKS */
+.footer-top-links {
+    display: flex;
+    gap: 35px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.footer-top-links a {
+    color: #0C54FF; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* SECOND ROW MENU */
+.footer-menu {
+    display: flex;
+    gap: 35px;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.footer-menu a {
+    color: #6B6F76;
+    text-decoration: none;
+}
+
+/* SOCIAL ICONS ROW */
+.footer-social {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+.footer-social i {
+    font-size: 33px;
+    color: #6B6F76;
+    transition: 0.3s;
+}
+
+.footer-social i:hover {
+    transform: scale(1.15);
+    color: #0C54FF;
+}
+
+/* APP STORE BUTTONS */
+.footer-apps {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.footer-apps img {
+    height: 55px;
+}
+
+/* TERMS + PRIVACY */
+.footer-bottom {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-bottom a {
+    color: #6B6F76;
+    text-decoration: none;
+}
+
+/* COPYRIGHT TEXT */
+.footer-copy {
+    font-size: 20px;
+    color: #6B6F76;
+    line-height: 1.6;
+}
+

@@ -1,0 +1,594 @@
+.navbar {
+    background-color: #1639CE;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #D9E5FF;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-filled {
+    padding: 10px 25px;
+    background: white;
+    border: none;
+    color: #1639CE;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #1f1f2e;
+}
+
+/* ================= HERO ================= */
+.fm-hero {
+  position: relative;
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.fm-hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.fm-hero-subtitle {
+  font-size: 20px;
+  color: #6b6b7a;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Emojis */
+.fm-emoji {
+  position: absolute;
+  font-size: 26px;
+  opacity: 0.9;
+}
+
+.is-red-heart { top: 60%; left: 48%; }
+.is-party-popper { top: 42%; left: 40%; }
+.is-folded-hands { top: 44%; left: 55%; }
+.is-hugging-face { top: 62%; left: 60%; }
+
+/* ================= BUBBLES ================= */
+.fm-bubbles {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 520px;
+}
+
+/* Common bubble */
+.fm-bubble {
+  position: absolute;
+  max-width: 360px;
+}
+
+.fm-bubble-body {
+  padding: 22px 26px;
+  border-radius: 22px;
+  position: relative;
+}
+
+.fm-bubble-quote {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Arrow */
+.fm-bubble-arrow {
+  position: absolute;
+  bottom: -10px;
+  left: 32px;
+}
+
+/* Footer */
+.fm-bubble-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 6px;
+}
+.fm-bubble-author {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.fm-bubble-avatar img {
+  border-radius: 50%;
+}
+
+/* ================= COLORS ================= */
+#bubble-save .fm-bubble-body {
+  background: #dcfaf5;
+  color: #118c7e;
+}
+
+#bubble-npr .fm-bubble-body {
+  background: #f8dcff;
+  color: #8a2db8;
+}
+
+#bubble-cnn .fm-bubble-body {
+  background: #fde3df;
+  color: #a51c1c;
+}
+
+#bubble-tears .fm-bubble-body {
+  background: #dcfaf5;
+  color: #118c7e;
+}
+
+#bubble-bbc .fm-bubble-body {
+  background: #f8dcff;
+  color: #8a2db8;
+}
+
+#bubble-nostalgia .fm-bubble-body {
+  background: #dcfaf5;
+  color: #118c7e;
+}
+
+#bubble-latimes .fm-bubble-body {
+  background: #fff4cf;
+  color: #9b7a00;
+}
+
+/* ================= POSITIONS (KEY PART) ================= */
+/* These positions match the image layout */
+
+#bubble-save {
+  top: 160px;
+  left: 0;
+}
+
+#bubble-npr {
+  top: 40px;
+  left: 420px;
+}
+
+#bubble-cnn {
+  top: 180px;
+  right: 0;
+}
+
+#bubble-tears {
+  top: 360px;
+  left: 220px;
+}
+
+#bubble-bbc {
+  top: 360px;
+  right: 260px;
+}
+
+#bubble-nostalgia {
+  top: 520px;
+  left: 40px;
+}
+
+#bubble-latimes {
+  top: 520px;
+  right: 420px;
+}
+
+/* Logos */
+.fm-bubble-logo img {
+  height: 26px;
+}
+/* SECTION */
+.press {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+.press-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.press-header h2 {
+  font-size: 36px;
+  margin: 0;
+  color: #1f1f2e;
+}
+
+.press-header p {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #9aa1ad;
+}
+
+.press-view {
+  font-size: 18px;
+  color: #2b59ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HORIZONTAL SCROLL */
+.press-cards {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 30px;
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.press-cards:active {
+  cursor: grabbing;
+}
+
+/* SCROLLBAR */
+.press-cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.press-cards::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.press-cards::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* CARD BASE */
+.press-card {
+  flex: 0 0 300px;
+  min-height: 360px;
+  border-radius: 22px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.press-card:hover {
+  transform: translateY(-6px);
+}
+
+.press-card img {
+  height: 34px;
+}
+
+.press-card p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.press-card span {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+/* COLORS */
+.guardian { background: #1f2f5e; }
+.cnn { background: #cc0000; }
+.latimes { background: #1f2428; }
+.bbc { background: #3a8d9c; }
+
+.daily-mail {
+  background: #ffffff;
+  color: #000;
+  border: 3px solid #000;
+}
+
+.npr-red { background: #e53935; }
+.oprah { background: #6f1d7a; }
+
+.testimonials {
+  max-width: 1200px;
+  margin: 140px auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.testimonials-header h2 {
+  font-size: 36px;
+  margin: 0;
+  color: #1f1f2e;
+}
+
+.testimonials-header p {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #9aa1ad;
+}
+
+.view-all {
+  font-size: 18px;
+  color: #2b59ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* CARD BASE */
+.testimonial-card {
+  border-radius: 28px;
+  padding: 56px 48px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card blockquote {
+  font-size: 22px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.testimonial-card .author {
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+
+/* COLOR VARIANTS */
+.testimonial-card.blue {
+  background: #f2f6ff;
+  color: #1f45e5;
+}
+
+.testimonial-card.blue .author {
+  color: #6b8cff;
+}
+
+.testimonial-card.red {
+  background: #fff1ee;
+  color: #b42318;
+}
+
+.testimonial-card.red .author {
+  color: #ff6b5f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.testimonial-cardss{
+  display: flex;
+}
+.testimonial-card{
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.social {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Header */
+.social-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.social-header h2 {
+  font-size: 36px;
+  margin: 0;
+  color: #1f1f2e;
+}
+
+.social-header p {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #9aa1ad;
+}
+
+.social-view {
+  font-size: 18px;
+  color: #2b59ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Info Box */
+.social-note {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #f1f9ff;
+  border-radius: 16px;
+  padding: 28px 32px;
+  text-align: center;
+}
+
+.social-note p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #0077cc;
+  margin: 0;
+}
+
+.social-note a {
+  color: #0077cc;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footer {
+    background: #F8F9FC;     /* Light grey-white background */
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6B6F76;
+}
+
+/* FUTUREME LOGO */
+.logo {
+    margin-bottom: 25px;
+}
+
+/* TOP NAVIGATION LINKS */
+.footer-top-links {
+    display: flex;
+    gap: 35px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.footer-top-links a {
+    color: #0C54FF; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* SECOND ROW MENU */
+.footer-menu {
+    display: flex;
+    gap: 35px;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.footer-menu a {
+    color: #6B6F76;
+    text-decoration: none;
+}
+
+/* SOCIAL ICONS ROW */
+.footer-social {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+.footer-social i {
+    font-size: 33px;
+    color: #6B6F76;
+    transition: 0.3s;
+}
+
+.footer-social i:hover {
+    transform: scale(1.15);
+    color: #0C54FF;
+}
+
+/* APP STORE BUTTONS */
+.footer-apps {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.footer-apps img {
+    height: 55px;
+}
+
+/* TERMS + PRIVACY */
+.footer-bottom {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-bottom a {
+    color: #6B6F76;
+    text-decoration: none;
+}
+
+/* COPYRIGHT TEXT */
+.footer-copy {
+    font-size: 20px;
+    color: #6B6F76;
+    line-height: 1.6;
+}
+
+
+
+
+

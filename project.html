@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureMe Navbar</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+
+
+</head>
+<body>
+ 
+    <nav class="navbar">
+        <div class="logo"><img src="https://prod-assets.futureme.org/assets/logo/logo-reverse@1x-056e77a61325f5f09d494ef19e0f2aab3ab1a50253c361e57169e3bd923053ed.svg"></div>
+
+        <ul class="menu">
+            <li><a href="./letter.html">✏️ Write a Letter to the Future</a></li>
+            <li><a href="./public.html">Read Public Letters</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./press.html">Press & Props</a></li>
+        </ul>
+
+        <div class="buttons">
+            <button class="btn-outline" onclick="goToSignup()">Sign In</button>
+            <button class="btn-filled" onclick="goToSignup()">Sign Up</button>
+
+        </div>
+    </nav>
+   <section class="write-section">
+
+    <h1>Write a letter to your future self</h1>
+
+    <p class="subtitle">
+        <strong>Write.</strong> Pick a date. <strong>Send.</strong> Verify. That’s it 😊<br>
+        Your letter is <strong>safe</strong> with us – we’ve sent over
+        <span class="highlight">20 million letters</span> in 20 years!
+    </p>
+
+    <div class="content-wrapper">
+
+        <!-- Left White Box -->
+        <div class="letter-box">
+            <div class="letter-header">
+                Dear FutureMe,
+                <span class="fullscreen">⛶ Full screen</span>
+            </div>
+
+            <textarea class="text-area"></textarea>
+
+            <button class="inspire-btn">💡 Inspire me!</button>
+        </div>
+<div class="right-box">
+
+    <div class="deliver-row">
+        <span id="deliver-title">Deliver in</span>
+        <!-- this text is the toggle button -->
+        <span id="toggle-text" style="font-size: 15px;color: whitesmoke;">Or choose a <span id="mode-toggle" class="link-text" style="color: white;">date</span></span>
+    </div>
+
+    <!-- duration buttons: visible first -->
+    <div class="btn-group" id="duration-group" style="color: white;">
+        <button class="option-btn active">6 months</button>
+        <button class="option-btn">1 year</button>
+        <button class="option-btn">3 years</button>
+        <button class="option-btn">5 years</button>
+        <button class="option-btn">10 years</button>
+    </div>
+
+    <!-- date selects: hidden first -->
+    <div class="date-group" id="date-group" style="display:none;">
+        <select>
+            <option>December</option>
+            <option>January</option>
+        </select>
+        <select>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        <select>
+            <option>2028</option>
+            <option>2029</option>
+        </select>
+    </div>
+
+    <div class="option-group">
+        <label>Select your audience</label>
+        <div class="btn-group" id="audience-group">
+            <button class="option-btn active">Private</button>
+            <button class="option-btn">Public, but anonymous</button>
+        </div>
+    </div>
+
+    <div class="option-group">
+        <label>Make sure you get your letter</label>
+        <div class="email-box">
+            <span>✉️</span>
+            <input type="email" placeholder="Please enter an email">
+        </div>
+    </div>
+
+    <p class="foot-note">
+        You will receive a confirmation email - please make sure your email
+        address is correct! By writing a letter and signing up for FutureMe you
+        agree to the <span class="terms">Terms of use</span>
+    </p>
+
+    <button class="send-btn duration-mode" id="send-btn">
+        Send to the Future
+    </button>
+
+</div>
+
+    </div>
+
+</section>
+<!-- Next Section -->
+<section class="benefits-section">
+
+    <h2 class="benefit-title">
+        FutureMe <span class="green-text">letters</span> are great for...
+    </h2>
+
+    <ul class="benefit-list">
+        <li>❤️ <strong>Reliving memories</strong> in vivid detail</li>
+        <li>📈 <strong>Acknowledging growth</strong> & achievements</li>
+        <li>✅ <strong>Setting goals</strong> for the future</li>
+        <li>😌 <strong>Decluttering</strong> your mind to find some headspace</li>
+    </ul>
+
+    <h2 class="inspiration-title">
+        Need some <span class="green-text">inspiration?</span>
+    </h2>
+
+    <p class="public-letters">
+        👥 Read <span class="public-red">Public Letters</span> – and sometimes, even find out what happened next!
+    </p>
+
+</section>
+
+<section class="letter-preview-section">
+
+    <div class="letter-card">
+
+        <p class="time-info">📍 <span>Time Travelled — about 15 days</span></p>
+
+        <h2 class="letter-title">
+            A letter from <span>November 22nd, 2025</span>
+        </h2>
+
+        <p class="letter-desc">
+            Day ???/90 of my Tiny Experiment PathwayPathway: clarity about your future...
+        </p>
+
+        <div class="letter-bottom-row">
+
+            <div class="left-meta">
+                <span>👍 Like 0</span>
+                <span>💬 Comments 0</span>
+            </div>
+
+            <div class="right-meta">
+                Nov 24, 2025 → Dec 01, 2025 • 11 words
+            </div>
+
+        </div>
+
+        <button class="read-more-btn">Read more</button>
+
+    </div>
+
+</section>
+<section class="blog-section">
+
+  <h2 class="blog-title">
+    Read our <span style="color: greenyellow;">Blog</span> for research, insights and tips on the practice of future letter writing
+  </h2>
+
+  <div class="blog-slider">
+
+    <!-- Left Arrow -->
+    <button id="leftBtn" class="blog-arrow">←</button>
+
+    <!-- Cards wrapper -->
+    <div class="blog-cards" id="blogCards">
+
+      <!-- Card 1 -->
+      <div class="blog-card">
+        <img
+          src="https://a.storyblok.com/f/127416/1107x603/f4f1e49ff8/header_writing_your_goals.jpg"
+          alt="Writing down your goals"
+        >
+        <div class="tag">Goal-setting</div>
+        <h3>How writing down your goals literally helps you achieve them</h3>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="blog-card">
+        <img
+          src="https://a.storyblok.com/f/127416/1107x603/413038ce76/header_whywritemyselft.jpg"
+          alt="Why should I write a letter to my future self?"
+        >
+        <div class="tag">Mindfulness</div>
+        <h3>Why should I write a letter to my future self?</h3>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="blog-card">
+        <img
+          src="https://a.storyblok.com/f/127416/1107x603/2be93524b6/header_capture_memory.png"
+          alt="Capture a memory"
+        >
+        <div class="tag">Writing letters to the future</div>
+        <h3>How to write a letter to yourself: Capture a memory</h3>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="blog-card">
+        <img
+          src="https://a.storyblok.com/f/127416/1107x603/45ff181aa8/header_gratitude_list.png"
+          alt="Gratitude list"
+        >
+        <div class="tag">Writing letters to the future</div>
+        <h3>How to write a letter to yourself: The gratitude list</h3>
+      </div>
+
+    </div>
+
+    <!-- Right Arrow -->
+    <button id="rightBtn" class="blog-arrow">→</button>
+
+  </div>
+
+</section>
+<div class="media">
+<div class="media-strip">
+        &emsp;&emsp;
+        <img alt="NPR" src="https://prod-assets.futureme.org/assets/svg/npr-white-f342dcc82321ad9a351520b80967693ec42e22cbc6a038217c3e3f5e062fb169.svg"> &emsp;&emsp;&emsp;
+        <img alt="CNN" src="https://prod-assets.futureme.org/assets/svg/cnn-white-e64fb7dc30654d89501ce03dcccbcee8cd2bb6157562d10822ee9ab50e80733e.svg">&emsp;&emsp;&emsp;
+        <img alt="Los Angeles Times" src="https://prod-assets.futureme.org/assets/svg/latimes-white-ce3f660609543e17d04c67105c018b222d0ac940a26350b23e7daadd58d321ff.svg">&emsp;&emsp;&emsp;
+        <img alt="Today" src="https://prod-assets.futureme.org/assets/svg/today-white-a207d4e41ab5495c27bffd3edda880662e244be36f78ff966aba16efe25001a7.svg">&emsp;&emsp;&emsp;
+        <img alt="BBC" src="https://prod-assets.futureme.org/assets/svg/bbc-white-37f2d038ae0be88110dc3b4042a4b8a23d587e21b3df44c75708f1d445592ef1.svg">
+      
+    </div></div>
+
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <div class="footer-logo"><img src="https://prod-assets.futureme.org/assets/logo/logo-reverse@1x-056e77a61325f5f09d494ef19e0f2aab3ab1a50253c361e57169e3bd923053ed.svg"></div><br>
+
+        <div class="footer-links">
+            <a href="#">✏️ Write a letter</a>
+            <a href="#">📄 Read Public Letters</a>
+            <a href="#">🔐 Sign In</a>
+            <a href="#">🧑‍💼 Sign Up</a>
+            <a href="#">✈️ Invite a friend</a>
+        </div>
+
+        <div class="footer-menu">
+            <a href="#">Home</a>
+            <span>•</span>
+            <a href="#">Press & Props</a>
+            <span>•</span>
+            <a href="#">Jobs</a>
+            <span>•</span>
+            <a href="#">Advertise</a>
+            <span>•</span>
+            <a href="#">Support</a>
+            <span>•</span>
+            <a href="#">Blog</a>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
+            
+        <a class="fm-icon is-twitter is-4 is-size-4" href="https://twitter.com/futureme">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a class="fm-icon is-facebook is-4 is-size-4" href="https://www.facebook.com/futureme">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a class="fm-icon is-youtube is-4 is-size-4" href="https://www.youtube.com/channel/UC6RKoiEdLnf2Fz91NImhUgg">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a class="fm-icon is-linked is-4 is-size-4" href="https://www.linkedin.com/company/futureme-labs/?viewAsMember=true">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="fm-icon is-instagram is-4 is-size-4" href="https://www.instagram.com/futureme_official/?hl=en">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      
+        </div><br>
+
+        <!-- APP STORE BUTTONS -->
+        <div class="footer-apps">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+        </div>
+
+        <div class="footer-bottom">
+            <a href="#">Terms of use</a> •
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <p class="footer-copy">
+            FutureMe™ brought to you by Memories Group Limited © 2002 - 2025.<br>
+            Yup - we've been sending letters to the future for almost 24 years now.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
