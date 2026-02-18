@@ -287,4 +287,15 @@
     width: 180px;
 }
 
+.hidden {
+    display: none;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
 
