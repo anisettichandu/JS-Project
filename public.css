@@ -336,5 +336,69 @@
     transform: scale(1.2);
 }
 
+/* ============================= */
+/* PUBLIC PAGE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+    .featured-wrapper {
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .letter-card {
+        max-width: 100%;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .page-title {
+        font-size: 26px;
+    }
+
+    .toggle-menu {
+        font-size: 18px;
+        gap: 15px;
+    }
+
+    .letter-title {
+        font-size: 20px;
+    }
+
+    .letter-text {
+        font-size: 16px;
+    }
+
+    .pagination {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
 
 

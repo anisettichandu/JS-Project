@@ -587,6 +587,34 @@ body {
     color: #6B6F76;
     line-height: 1.6;
 }
+@media (max-width: 900px) {
+
+    .fm-hero-title {
+        font-size: 40px;
+    }
+
+    .fm-bubbles {
+        height: auto;
+    }
+
+    .fm-bubble {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .press-header,
+    .testimonials-header,
+    .social-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .testimonial-cardss {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 
 
 

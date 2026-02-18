@@ -202,4 +202,19 @@ label {
 .message.success {
   color: green;
 }
+@media (max-width: 768px) {
+
+    .signup-card {
+        padding: 20px;
+    }
+
+    .create-btn {
+        width: 100%;
+    }
+
+    .google-btn {
+        font-size: 14px;
+    }
+}
+
 

@@ -297,5 +297,94 @@
     gap: 8px;
 }
 
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .editor-box {
+        width: 100%;
+    }
+
+    .right-box {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .letter-box {
+        height: 200px;
+        font-size: 16px;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .send-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .fm-top-links,
+    .fm-nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .fm-social {
+        flex-wrap: wrap;
+    }
+
+    .fm-apps {
+        flex-direction: column;
+    }
+
+    .fm-apps img {
+        width: 150px;
+    }
+}
+
+
 
 
